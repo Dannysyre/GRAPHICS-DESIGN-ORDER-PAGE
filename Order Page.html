@@ -1,0 +1,106 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+ h1{
+     font-family:'Playfair-Display';
+     font-weight: 10;
+ }   
+body{
+    font-family: 'Quicksand';
+    color: white;
+    background-image: url(/brushes-3129361_1920.jpg);
+    width:500px;
+    margin:auto;
+    margin-top:30px;
+}
+form{
+    background-color: rgb(12, 12, 12,0.5);
+    padding:2.5rem 2.5rem;
+    border-radius:2rem;
+    width:500px;
+    margin: auto;
+}  
+
+.submit-btn{
+    width:100%;
+    padding:0.75rem;
+    background:rgb(128, 125, 125);
+    border-radius:10px;
+    cursor:pointer;
+    color: white;
+}
+form{
+    margin:0 auto 1.25rem auto;
+    
+}
+.form-edit{
+    display:block;
+    width:90%;
+    height:2rem;
+    padding: 0.25rem 0.75rem;
+    background-colour: black;
+    border-radius:0.25rem;
+}
+</style>
+
+
+<!DOCTYPE HTML>
+<html>
+<header>
+<h1 id="title">GRAPHICS DESIGN ORDER PAGE</h1>
+</header>
+<body>
+<p id="description"> Fill details below to complete your order</p>
+
+
+<form id="survey-form">
+<label for= "title" id="title"> Title</label>
+<input id= "title" type="radio" id="MR" name="title" value="MrS">
+<label for="title">Mr</label>
+<input id= "title" type="radio" id="MRS" name="title" value="MRS">
+<label for="title">Mrs</label>
+<input id= "title" type="radio" id="Miss" name="title" value="Miss">
+<label for="title">Ms</label>
+<br>
+<label for="name" id="name-label">Name</label>
+<input id="name" type="text" name="name" placeholder="Mark Henry" class="form-edit"> <required</input>
+<br>
+<label for="email" id="email-label">Email</label>
+<input id="email" type="email" name="email" placeholder="abc123@gmail.com"class="form-edit"><required</input>
+<br>
+<label for="number" id="number-label">Age</label>
+<input id="number" type="number" name="number" placeholder="16" class="form-edit"><required min="16" max="100"></input>
+<br>
+<label for="dropdown" id="design-type">Design type</label>
+<select id="dropdown"class="form-edit">
+<option value="e-flyer"> E-flyer </option>
+<option value="logo_design"> Logo design</option>
+<option value="business_cards_and_stationery"> Business cards and stationery</option>
+<option value="image_and_text_editing"> Image and text editing</option>
+<option value="Animations"> Animations </option>
+</select>
+<br>
+<br>
+<label for="features">Add features</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value= "print_media">
+<label for="checkbox"> Print Media</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value= "Electronic_media">
+<label for="checkbox"> Electronic Media</label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value= "web">
+<label for="checkbox">Web</label>
+<br>
+<br>
+<label id="textarea">Additional comments</label>
+<br>
+<textarea id="textarea" name="instructions" rows="5" cols="40"></textarea>
+<br>
+<br>
+<input id="submit" type="submit" value="Proceed to Invoice" class="submit-btn"></input>
+
+
+</form>
+</body>
+</html>
